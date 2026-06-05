@@ -6,8 +6,8 @@ Upload these files directly to the root of the GitHub repository connected to Ve
 
 - `index.html`
 - `styles.css`
-- `script.js`
+- `mehar.jpg`  ← profile photo (required by the page)
 - `CNAME`
 - `Mehar_Singh_Resume.pdf`
 
-Do not upload a zip file to the repository.
+The site is static and needs no JavaScript. Do not upload a zip file to the repository.
