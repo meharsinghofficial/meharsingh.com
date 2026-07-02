@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ShelfSpace — Building a $497 AI-Visibility Audit Business | Mehar Singh</title>
+  <meta name="description" content="Case study: designing, building, and launching ShelfSpace, a productized GEO (Generative Engine Optimization) audit for DTC brands." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../styles.css" />
+</head>
+<body>
+  <nav class="nav">
+    <div class="wrap nav-inner">
+      <a class="nav-logo" href="../index.html">Mehar Singh<span>.</span></a>
+      <button class="nav-toggle" aria-label="Menu" onclick="document.querySelector('.nav-links').classList.toggle('open')">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links">
+        <li><a href="../index.html#work">Case Studies</a></li>
+        <li><a class="btn primary" style="padding:9px 20px;" href="../index.html#contact">Hire me</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <header class="case-hero">
+    <div class="wrap">
+      <a class="crumb" href="../index.html#work">← All case studies</a>
+      <span class="eyebrow">Founder · Productized Service · AI Marketing</span>
+      <h1>ShelfSpace: a $497 AI-visibility audit for DTC brands, built end to end</h1>
+      <p class="lead">Consumers increasingly ask ChatGPT and Claude what to buy — and most brands have no idea whether AI assistants recommend them, their competitors, or nobody. ShelfSpace turns that blind spot into a productized audit.</p>
+      <div class="case-meta">
+        <div><div class="m-label">Role</div><div class="m-val">Founder — everything</div></div>
+        <div><div class="m-label">Timeline</div><div class="m-val">2026 · Live</div></div>
+        <div><div class="m-label">Stack</div><div class="m-val">Claude API, Node.js, Stripe, Vercel</div></div>
+        <div><div class="m-label">Link</div><div class="m-val"><a href="https://shelfspace-eta.vercel.app" target="_blank" rel="noopener">shelfspace-eta.vercel.app ↗</a></div></div>
+      </div>
+    </div>
+  </header>
+
+  <article class="case-body">
+    <div class="wrap">
+      <div class="tldr">
+        <div class="t-label">TL;DR</div>
+        <p>I identified an emerging category (GEO — Generative Engine Optimization), designed a $497 productized audit around it, built the AI measurement pipeline, wrote the direct-response sales page, and wired Stripe checkout. One person, offer to product to payment.</p>
+      </div>
+
+      <h2>The business problem</h2>
+      <p>AI assistants are becoming a shopping channel. When someone asks "what's the best air purifier under $200?", the answer is a shortlist — and brands not on it lose the sale before a website is ever visited. Unlike Google rankings, this "AI shelf space" is invisible to brands: there's no Search Console for ChatGPT.</p>
+      <p>SEO agencies were starting to talk about GEO, but almost nothing existed as a concrete, affordable deliverable for small DTC brands. That gap is the product.</p>
+
+      <h2>Designing the offer</h2>
+      <ul>
+        <li><strong>Productized, not consulting:</strong> a fixed-scope, fixed-price ($497) audit that can be sold from a landing page without sales calls — the right shape for a solo operator.</li>
+        <li><strong>Deliverable-first:</strong> the buyer gets a concrete report — where their brand shows up across AI assistants, how they compare to named competitors, and a prioritized fix list.</li>
+        <li><strong>Priced against the alternative:</strong> $497 is positioned against agency GEO retainers, making it an easy first purchase for a founder or marketing lead.</li>
+      </ul>
+
+      <h2>What I built</h2>
+      <ul>
+        <li>A <strong>two-pass measurement pipeline on the Claude API</strong>: pass one generates the buying-intent questions a brand's customers actually ask; pass two scores how visibly the brand (versus competitors) appears in AI answers to those questions.</li>
+        <li>A <strong>report generator</strong> that turns raw scores into a client-ready document with findings and recommendations — the deliverable that justifies the price.</li>
+        <li>A <strong>long-form sales page</strong> in classic direct-response structure: problem → mechanism → proof → deliverable → price → FAQ. Every section answers one specific objection.</li>
+        <li><strong>Stripe checkout</strong> and a delivery workflow, so the business can take money and fulfill without me building anything else first.</li>
+      </ul>
+
+      <div class="img-slot">Add: screenshot of the ShelfSpace landing page + a sample report page (blur any client names)</div>
+
+      <h2>Marketing strategy</h2>
+      <p>ShelfSpace sits at the bottom of a funnel I also built: <a href="ai-rank.html">AI Rank</a>, a free AI-visibility checker, generates awareness and demonstrates the problem in 30 seconds; ShelfSpace monetizes the brands who see a bad score and want the full picture. Free tool → paid audit is a deliberate product-led pipeline.</p>
+
+      <h2>Results</h2>
+      <div class="results-box">
+        <ul>
+          <li>Complete productized business shipped solo: offer, product, sales page, and payment flow.</li>
+          <li>Live and sellable at <a href="https://shelfspace-eta.vercel.app" target="_blank" rel="noopener">shelfspace-eta.vercel.app</a>.</li>
+          <li><span class="metric-todo">＋ Add: audits sold / revenue to date</span> <span class="metric-todo">＋ Add: sample-report requests</span> <span class="metric-todo">＋ Add: landing-page conversion rate</span></li>
+        </ul>
+      </div>
+
+      <h2>What this shows</h2>
+      <p>Category insight (spotting GEO early), offer design, direct-response copywriting, technical execution with AI APIs, and the operator mindset to ship a complete revenue loop rather than a demo.</p>
+    </div>
+  </article>
+
+  <nav class="case-nav">
+    <div class="wrap">
+      <a class="btn ghost" href="../index.html#work">← All case studies</a>
+      <a class="btn" href="ai-rank.html">Next: AI Rank →</a>
+    </div>
+  </nav>
+
+  <footer>
+    <div class="wrap">
+      <span>© 2026 Mehar Singh · Detroit, MI</span>
+      <a href="../index.html#contact">Hire me</a>
+    </div>
+  </footer>
+</body>
+</html>

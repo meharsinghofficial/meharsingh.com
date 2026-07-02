@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Executive Retail Performance Dashboard in Tableau | Mehar Singh</title>
+  <meta name="description" content="Case study: an executive Tableau dashboard on a national retail dataset — KPI design, regional YoY growth, sub-category profitability, and customer lifetime profit." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../styles.css" />
+</head>
+<body>
+  <nav class="nav">
+    <div class="wrap nav-inner">
+      <a class="nav-logo" href="../index.html">Mehar Singh<span>.</span></a>
+      <button class="nav-toggle" aria-label="Menu" onclick="document.querySelector('.nav-links').classList.toggle('open')">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links">
+        <li><a href="../index.html#work">Case Studies</a></li>
+        <li><a class="btn primary" style="padding:9px 20px;" href="../index.html#contact">Hire me</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <header class="case-hero">
+    <div class="wrap">
+      <a class="crumb" href="../index.html#work">← All case studies</a>
+      <span class="eyebrow">Analytics · Tableau · MBA Capstone</span>
+      <h1>An executive retail dashboard built around decisions, not charts</h1>
+      <p class="lead">For my MBA data-visualization capstone at Central Michigan University, I built a Tableau dashboard on a national retail dataset — designed backwards from the three questions a leadership team actually asks.</p>
+      <div class="case-meta">
+        <div><div class="m-label">Role</div><div class="m-val">Analyst — design &amp; build</div></div>
+        <div><div class="m-label">Context</div><div class="m-val">MBA Business Data Analytics, CMU</div></div>
+        <div><div class="m-label">Data</div><div class="m-val">Multi-year national retail orders dataset</div></div>
+        <div><div class="m-label">Tool</div><div class="m-val">Tableau</div></div>
+      </div>
+    </div>
+  </header>
+
+  <article class="case-body">
+    <div class="wrap">
+      <div class="tldr">
+        <div class="t-label">TL;DR</div>
+        <p>An executive KPI dashboard answering: where is growth coming from, which product lines destroy margin, and which customers matter most. KPI banner, regional YoY trends, a state-level sales map, sub-category profitability, and top customers by lifetime profit — one screen, decision-ready.</p>
+      </div>
+
+      <h2>The business questions</h2>
+      <p>Most student dashboards show everything the data contains. I designed this one the way a business would commission it — starting from the decisions it needs to support:</p>
+      <ol>
+        <li><strong>Where is growth coming from?</strong> → Regional sales trends with year-over-year growth rates, plus a state-level sales map to localize momentum.</li>
+        <li><strong>What sells well but destroys profit?</strong> → Profit by sub-category, exposing lines with strong revenue and negative margin — the classic retail trap where discounting quietly erases profitability.</li>
+        <li><strong>Which customers actually matter?</strong> → Top customers ranked by lifetime profit (not revenue), the right lens for retention and account priorities.</li>
+      </ol>
+
+      <h2>Design decisions</h2>
+      <ul>
+        <li><strong>KPI banner first:</strong> total sales, total profit, profit margin, and customer count as big-number tiles — the 5-second read before any exploration.</li>
+        <li><strong>YoY growth over raw trend lines:</strong> executives compare against last year, not against zero. Framing regions by growth rate changes which ones look like problems.</li>
+        <li><strong>Profit, not revenue, as the sort key:</strong> both the sub-category and customer views rank on profit, because revenue-ranked views hide exactly the insights that matter.</li>
+        <li><strong>One screen:</strong> everything answers from a single dashboard view — no tab-hunting in a leadership meeting.</li>
+      </ul>
+
+      <div class="img-slot">Add: full-size screenshot of the capstone dashboard, and publish it to Tableau Public so recruiters can interact with it — then link it here</div>
+
+      <h2>Live Tableau work: sales-pipeline funnel chart</h2>
+      <p>Interact with a build from Tableau's Workout Wednesday community challenge (2023 Week 5) — a sales-pipeline funnel tracking opportunity value and conversion through pipeline stages. Funnel charts are deceptively hard in Tableau; this one is a from-scratch build, live below.</p>
+      <div class="tableau-wrap">
+        <tableau-viz src="https://public.tableau.com/views/WOW2023Week5FunnelChart-1/SalesPipeline" toolbar="bottom" hide-tabs></tableau-viz>
+      </div>
+      <p><a href="https://public.tableau.com/views/WOW2023Week5FunnelChart-1/SalesPipeline?:language=en-US&amp;:display_count=n&amp;:origin=viz_share_link" target="_blank" rel="noopener">Open the viz full-size on Tableau Public ↗</a></p>
+
+      <h2>Insights the dashboard surfaces</h2>
+      <ul>
+        <li>Several sub-categories with healthy sales volume run at negative margin — candidates for pricing or discounting changes rather than more promotion.</li>
+        <li>Regional YoY view separates markets that are big from markets that are growing — a distinction a raw sales map hides.</li>
+        <li>A small set of customers accounts for a disproportionate share of lifetime profit, arguing for a retention program targeted by profitability.</li>
+      </ul>
+
+      <h2>Why this matters for marketing analytics roles</h2>
+      <p>The same discipline transfers directly to marketing: campaign dashboards should rank on contribution, not spend; channel views should show growth against comparable periods; and every chart should map to a budget decision someone can actually make. This is how I approached reporting at <a href="paid-media-rugs-story.html">The Rugs Story</a> and SixSails, too.</p>
+    </div>
+  </article>
+
+  <nav class="case-nav">
+    <div class="wrap">
+      <a class="btn ghost" href="silkwox.html">← Prev: SILKWOX</a>
+      <a class="btn" href="firstclass-crm.html">Next: CRM →</a>
+    </div>
+  </nav>
+
+  <footer>
+    <div class="wrap">
+      <span>© 2026 Mehar Singh · Detroit, MI</span>
+      <a href="../index.html#contact">Hire me</a>
+    </div>
+  </footer>
+
+  <script type="module" src="https://public.tableau.com/javascripts/api/tableau.embedding.3.latest.min.js"></script>
+</body>
+</html>
